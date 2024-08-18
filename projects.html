@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projects</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/42883004d6.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head> 
+<body>
+    <script>
+        AOS.init();
+    </script>
+    <h1 class="page-title">projects</h1>
+    <div class="back">
+        <a href="index.html">
+            <div class="back-box">
+                <i class="fas fa-arrow-left"></i>
+            </div>
+        </a>
+    </div>
+    <div class="entries">
+        <div class="project" data-aos="zoom-in">
+            <div class="project-header">
+                <h2 class="project-title">personal website</h2>
+                <p class="date">july 2024 - august 2024</p>
+            </div>
+            <hr class="separator">
+            <div class="project-body">
+                <img src="./assets/personal_website.png" alt="Personal Website" class="project-image">
+                <div class="desc-container">
+                    <p class="desc"> a personal portfolio website showcasing my projects. built using html + css.<br><br> made with <i class="fa-regular fa-heart"></i>.</p>
+                    <a href="https://github.com/lowgan123/personal-website" target="_blank" class="project-link">link to the project</a>
+                </div>
+            </div>
+        </div>
+        <div class="project" data-aos="zoom-in">
+            <div class="project-header">
+                <h2 class="project-title">cnn-based dna sequence classifier</h2>
+                <p class="date">april 2024 - may 2024</p>
+            </div>
+            <hr class="separator">
+            <div class="project-body">
+                <img src="./assets/dnaclass.jpeg" alt="Project Poster" class="project-image">
+                <div class="desc-container">
+                    <p class="desc"><i>built for deep learning (spring 2024). </i><br><br>a cnn-based dna sequence classification tool that uses tensorflow to categorize splice junctions as exon-intron or intron-exon boundaries. implemented preprocessing techniques and architectural variations to reach >90 percent accuracy. built in python with tensorflow.</p>
+                    <a href="https://devpost.com/software/cnn-based-analysis-of-dna-sequence-classification" target="_blank" class="project-link">link to the project</a>
+                </div>
+            </div>
+        </div>
+        <div class="project" data-aos="zoom-in">
+            <div class="project-header">
+                <h2 class="project-title">concurrent / distributed store</h2>
+                <p class="date">april 2024 - may 2024</p>
+            </div>
+            <hr class="separator">
+            <div class="project-body">
+                <img src="./assets/kvstore.png" alt="kvstore" class="project-image">
+                <div class="desc-container">
+                    <p class="desc"><i>built for fundamentals of computer systems (spring 2024). </i><br><br>implemented a mock key-value storage system for single and multi server systems. allowed clients to retrieve data from multiple servers, and distributed that data evenly. built in c++.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project" data-aos="zoom-in">
+            <div class="project-header">
+                <h2 class="project-title">queuesmart</h2>
+                <p class="date">november 2023 - december 2023</p>
+            </div>
+            <hr class="separator">
+            <div class="project-body">
+                <img src="./assets/queuesmart.png" alt="queuesmart" class="project-image">
+                <div class="desc-container">
+                    <p class="desc"><i>built for introduction to software engineering (fall 2023). </i><br><br>a web application allowing teaching assistants to create queue lines for debugging support. integrated with firestore to collect data about usage and compile statistics into a single page for admin. built with typescript/react for the frontend and java/go for the backend.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project" data-aos="zoom-in">
+            <div class="project-header">
+                <h2 class="project-title">clef cat</h2>
+                <p class="date">september 2023 - december 2023</p>
+            </div>
+            <hr class="separator">
+            <div class="project-body">
+                <img src="./assets/clefcat.png" alt="clefcat" class="project-image">
+                <div class="desc-container">
+                    <p class="desc"><i>built for brown-risd game developers. </i><br><br>a rhythm-platformer game created in unity over the course of a semester. playable online. built with c#.</p>
+                    <a href="https://brownrisdgames.itch.io/clef-cat" target="_blank" class="project-link">link to the game</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
