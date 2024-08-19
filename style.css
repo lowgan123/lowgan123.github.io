@@ -184,3 +184,28 @@ h1 {
     height: 100%;
     display: block;
 }
+
+.about{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile{
+    width: 30%;
+    /* round the corners on the left only*/
+    border-radius: 0px 10px 10px 0px;
+    border: 1px solid black;
+}
+
+.about-desc{
+    display: flex;
+    align-items: center;
+}
+
+.about-desc p {
+    width: 50%;
+    font-size: 30px;
+    margin-left: 40px;
+}
