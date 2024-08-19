@@ -112,6 +112,10 @@ h1 {
     color: #888888;
 }
 
+.project-header h2{
+        margin-right: 20px;
+}
+
 .project-title{
     margin: 0;
     font-size: 25px;
@@ -194,7 +198,6 @@ h1 {
 
 .profile{
     width: 30%;
-    /* round the corners on the left only*/
     border-radius: 0px 10px 10px 0px;
     border: 1px solid black;
 }
@@ -208,4 +211,75 @@ h1 {
     width: 50%;
     font-size: 30px;
     margin-left: 40px;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: auto;
+    }
+
+    .child {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        margin-top: 30%;
+    }
+
+    .nav {
+        padding: 0;
+        font-size: 20px;
+    }
+
+    .navbar {
+        margin-bottom: 20px;
+        width: 50%;
+        align-self: center;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+
+    .entries{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project-body {
+        flex-direction: column;
+    }
+
+    .project-image {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .desc-container {
+        width: 100%;
+    }
+
+    .about-desc {
+        flex-direction: column;
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .about-desc p {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .profile {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
 }
