@@ -13,8 +13,31 @@
 </head> 
 <body>
     <script>
-        AOS.init();
+        function initAOS() {
+            const projects = document.querySelectorAll('.project');
+            
+            const viewportHeight = window.innerHeight;
+            projects.forEach((project, index) => {
+                const rect = project.getBoundingClientRect();
+
+                // if a project entry is in view on load, the delay is variable
+                if (rect.top < viewportHeight) {
+                    project.setAttribute('data-aos-delay', (index * 200).toString());
+                } else {
+                    project.setAttribute('data-aos-delay', '50');
+                }
+            });
+
+            AOS.init({
+                offset: 200,
+                duration: 400,
+                once: true
+            });
+        }
+
+        window.addEventListener('load', initAOS);
     </script>
+
     <h1 class="page-title">projects</h1>
     <div class="back">
         <a href="index.html">
@@ -24,6 +47,33 @@
         </a>
     </div>
     <div class="entries">
+        <div class="project" data-aos="zoom-in">
+            <div class="project-header">
+                <h2 class="project-title">floravision</h2>
+                <p class="date">november 2024 - december 2024</p>
+            </div>
+            <hr class="separator">
+            <div class="project-body">
+                <img src="./assets/floravision.png" alt="Plant Dataset" class="project-image">
+                <div class="desc-container">
+                    <p class="desc"><i>built for computer vision (fall 2024). </i><br><br>an image classifier that is able to identify crop diseases from an image of a diseased leaf, and provides care advice from gemini. built in python using tensorflow and the google gemini api.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project" data-aos="zoom-in">
+            <div class="project-header">
+                <h2 class="project-title">cloud gate (bean)</h2>
+                <p class="date">november 2024 - december 2024</p>
+            </div>
+            <hr class="separator">
+            <div class="project-body">
+                <img src="./assets/bean0.jpeg" alt="Bean Image" class="project-image">
+                <div class="desc-container">
+                    <p class="desc"><i>built for intro to computer graphics (fall 2024). </i><br><br>a custom-built raytracer that features realistic reflections and lighting, motion blur, ambient occlusion, and soft shadows. multithreaded. built in c++.</p>
+                    <a href="https://youtu.be/AM1mzVqbfr4?si=KCPGc1QM4HSd6xVm&t=550" target="_blank" class="project-link">link to the demo video</a>
+                </div>
+            </div>
+        </div>
         <div class="project" data-aos="zoom-in">
             <div class="project-header">
                 <h2 class="project-title">personal website</h2>
